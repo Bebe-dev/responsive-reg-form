@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color:hsl(0, 100%, 74%); 
+  background-image: url(design/bg-intro-desktop.png);
+  font-family: 'Poppins', sans-serif;
+}
+.left{
+  color: white;
+  width: 30%;
+  margin-right: 30px;
+}
+h1{
+  line-height: 1;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+}
+.right{
+  width: 40%;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+.right .p{
+  color: white;
+  width: 100%;
+  padding: 10px;
+  margin: 25px 0;
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0 7px rgba(40, 40, 40, 0.2);
+  text-align: center;;
+}
+form{
+  width: 100%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 7px rgba(40, 40, 40, 0.2);
+}
+input{
+  font-weight: bold;
+}
+input, button{
+  width: 100%; 
+  margin:10px 0;
+  border: 0.5px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  padding: 15px 20px;
+}
+input:hover{
+  border: 1px solid hsl(248, 32%, 49%);
+  outline: none;
+}
+button{
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+  font-weight: bold;
+}
+form p{
+  color: hsla(249, 10%, 26%, 0.4);
+  font-size: 14px;
+  text-align: center;
+}
+.form-control{
+  position: relative;
+}
+.form-control img{
+  visibility: hidden;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+.form-control small{
+  visibility: hidden;
+  position: absolute;
+  top: 55px;
+  right: 8px;
+  color: red;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control.error img {
+  visibility: visible;
+}
+.form-control.error small{
+  visibility: visible;
+}
+.form-control.success img{
+  visibility: hidden;
+}
+.form-control.success img {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 375px){
+  main{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+body{
+  background-image: url(design/bg-intro-mobile.png)
+}
+.left{
+  width: 80%;
+  text-align: center;
+}
+.right{
+  width: 80%;
+}
+.p{
+  text-align: center;
+}
+.right .p{
+  padding: 10px 50px;
+}
+h1{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 20px;
+}
+p{
+  font-size: 14px;
+}
+form p{
+  font-size: 10px;
+  text-align: center;
+  padding:0 15px;
+}
+}
